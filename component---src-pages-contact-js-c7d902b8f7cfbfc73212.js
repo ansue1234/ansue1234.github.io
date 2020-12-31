@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"Cuy+":function(e,u,t){"use strict";t.r(u),t.d(u,"default",(function(){return c}));t("q1tI");var n=t("Bl7J"),b=t("AeFk");function c(){return Object(b.b)(n.a,null,Object(b.b)("h1",null,"Contact me at:"),Object(b.b)("p",null,Object(b.b)("a",{href:"mailto:gusue418@berkeley.edu"},"gusue418@berkeley.edu")))}}}]);
-//# sourceMappingURL=component---src-pages-contact-js-c7d902b8f7cfbfc73212.js.map
