@@ -10,7 +10,7 @@ export default function Layout({ children }) {
       css={css`
         margin: 0 auto;
         max-width: 700px;
-        padding: ${rhythm(2)};
+        padding: ${rhythm(0)};
         padding-top: ${rhythm(1.5)};
       `}
     >
