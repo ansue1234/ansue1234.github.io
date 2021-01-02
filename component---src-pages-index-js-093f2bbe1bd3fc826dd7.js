@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{RXBc:function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return o}));t("q1tI"),t("Wbzz"),t("p3AD");var c=t("Bl7J"),l=t("AeFk");function o(n){var e=n.data;return console.log(e),Object(l.b)(c.a,null,Object(l.b)("h1",null,"Hello"),Object(l.b)("p",null,"This site is under construction, please check back later!"))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-093f2bbe1bd3fc826dd7.js.map
