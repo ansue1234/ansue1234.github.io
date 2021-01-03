@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{RXBc:function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return l}));t("q1tI");var c=t("Bl7J"),o=t("AeFk");function l(e){var n=e.data;return console.log(n),Object(o.b)(c.a,null,Object(o.b)("h1",null,"Hello! Welcome to the personal site of Andrew Sue!"),Object(o.b)("p",null,"This site is under construction, please check back later!"))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-8feffc78b5d0a9142faf.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{"4M2m":function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return u}));t("q1tI");var c=t("Bl7J"),o=t("AeFk");function u(n){var e=n.data;return console.log(e),Object(o.b)(c.a,null,Object(o.b)("h1",null,"Projects"),Object(o.b)("p",null,"This site is under construction, please check back later!"))}}}]);
+//# sourceMappingURL=component---src-pages-projects-quick-therm-js-a1c90d3f792e9a854c38.js.map

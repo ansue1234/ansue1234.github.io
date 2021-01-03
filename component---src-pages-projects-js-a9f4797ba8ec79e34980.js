@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{"16l3":function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return o}));t("q1tI");var c=t("Bl7J"),l=t("AeFk");function o(n){var e=n.data;return console.log(e),Object(l.b)(c.a,null,Object(l.b)("h1",null,"Projects"),Object(l.b)("p",null,"This site is under construction, please check back later!"))}}}]);
+//# sourceMappingURL=component---src-pages-projects-js-a9f4797ba8ec79e34980.js.map
