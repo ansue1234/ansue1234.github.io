@@ -3,6 +3,7 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
+const remarkSlug = require(`remark-slug`)
 
 module.exports = {
   /* Your site config here */
@@ -18,7 +19,27 @@ module.exports = {
       },
     },
     `gatsby-plugin-emotion`,
-    `gatsby-transformer-remark`,
+
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-autolink-headers`],
+      },
+    },
+    `gatsby-plugin-smoothscroll`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              icon: false
+            }
+          }],
+      },
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {

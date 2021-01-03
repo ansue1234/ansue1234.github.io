@@ -15,7 +15,7 @@ export default function Layout({ children }) {
       `}
     >
       <Link
-        to={`/contact/`}
+        to={`/contents/Contact/`}
         css={css`
           float: right;
           margin-right: 20px
@@ -24,13 +24,22 @@ export default function Layout({ children }) {
         Contact
       </Link>
       <Link
-        to={`/about/`}
+        to={`/contents/About/`}
         css={css`
           float: right;
           margin-right: 20px
         `}
       >
         About
+      </Link>
+      <Link
+        to={`/projects/`}
+        css={css`
+          float: right;
+          margin-right: 20px
+        `}
+      >
+        Projects
       </Link>
       <Link
         to={`/`}

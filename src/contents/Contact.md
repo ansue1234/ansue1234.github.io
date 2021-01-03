@@ -1,5 +1,8 @@
 ---
 title: "Contact"
+category: "contact"
+toc: False
+tags: ["none"]
 ---
 
 ### Email:
