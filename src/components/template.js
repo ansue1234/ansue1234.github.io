@@ -5,12 +5,12 @@ import Layout from "./layout"
 import Toc from "./toc"
 
 export default function Page({ data }) {
-  const { body, frontmatter, tableOfContents } = data.mdx
+  const { body, frontmatter, tableOfContents} = data.mdx
   return (
     <Layout>
       <h1>{frontmatter.title}</h1>
       {
-        tableOfContents?.items && (
+        tableOfContents?.items && frontmatter.toc && (
             <Toc items={tableOfContents.items}/>
         )
       }
@@ -24,8 +24,13 @@ export const query = graphql`
     mdx(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
+        toc
       }
       body
+      headings {
+          depth
+          value
+      }
       tableOfContents(maxDepth: 2)
       fields {
         slug

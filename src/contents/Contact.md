@@ -2,6 +2,7 @@
 title: "Contact"
 category: "contact"
 toc: False
+description: "My contact information"
 tags: ["none"]
 ---
 
