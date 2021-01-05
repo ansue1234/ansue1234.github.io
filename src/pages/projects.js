@@ -87,32 +87,34 @@ export default function Projects({ data }) {
         <Layout>
             <h1>Projects</h1>
             <p>Here is a list of all my projects, feel free to poke around!</p>
-            <FormControl css={css`min-width: 140px; max-width: 300px; height: 50px; padding-bottom: 20px`}>
-                <InputLabel id="select-tags-label" css={css`padding-bottom: 10px`}>Sort by tags</InputLabel>
-                <Select
-                    labelId="Select-tags"
-                    id="select-tags"
-                    multiple
-                    value={selectedTags}
-                    onChange={handleChange}
-                    input={<Input id="select-multiple-chip" />}
-                    renderValue={(selected) => (
-                        <div css={css`display: flex; flex-wrap: wrap;`}>
-                        {selected.map((value) => (
-                            <Chip key={value} label={value} css={css`margin: 2px`}/>
-                        ))}
-                        </div>
-                    )}
-                    MenuProps={MenuProps}
-                >
-                {tags.map((tag) => (
-                    <MenuItem key={tag} value={tag} style={getStyles(tag, tags, theme)}>
-                    {tag}
-                    </MenuItem>
-                ))}
-                </Select>
-            </FormControl>
-            <Button variant='contained' color='primary' onClick = {() => (setSelectedTags([]))}>Show all</Button>  
+            <div css={css`display: flex; flex-direction: row`}>
+                <FormControl css={css`min-width: 140px; max-width: 300px; height: 50px; padding-bottom: 20px`}>
+                    <InputLabel id="select-tags-label" css={css`padding-bottom: 10px`}>Sort by tags</InputLabel>
+                    <Select
+                        labelId="Select-tags"
+                        id="select-tags"
+                        multiple
+                        value={selectedTags}
+                        onChange={handleChange}
+                        input={<Input id="select-multiple-chip" />}
+                        renderValue={(selected) => (
+                            <div css={css`display: flex; flex-wrap: wrap;`}>
+                            {selected.map((value) => (
+                                <Chip key={value} label={value} css={css`margin: 2px`}/>
+                            ))}
+                            </div>
+                        )}
+                        MenuProps={MenuProps}
+                    >
+                    {tags.map((tag) => (
+                        <MenuItem key={tag} value={tag} style={getStyles(tag, tags, theme)}>
+                        {tag}
+                        </MenuItem>
+                    ))}
+                    </Select>
+                </FormControl>  
+                <Button variant='contained' color='primary' size="small" css={css`text-transform: none; height: 30px; margin-top: 20px`} onClick = {() => (setSelectedTags([]))}>All Projects</Button>
+            </div>
             <GridList cols={3} cellHeight = {300} css={css`padding-top: 2.5rem`}>
                 {getProj(data.allMdx.nodes, selectedTags).map((node) => (
                     <GridListTile key={node.frontmatter.title}>
@@ -126,8 +128,8 @@ export default function Projects({ data }) {
                                                 `}>
                                         {node.frontmatter.tags.map((tag)=>{
                                             return(
-                                                <li id={tag}  css={css`display: inline-block; marhin: 0px`}>
-                                                    <Chip key={tag} label={tag}/>
+                                                <li id={tag}  css={css`display: inline-block; margin: 0px`}>
+                                                    <Chip key={tag} label={tag} css={css`margin: 0px`}/>
                                                 </li>
                                             )
                                         })}

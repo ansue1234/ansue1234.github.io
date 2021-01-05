@@ -1,11 +1,19 @@
 import React from "react"
 import { css } from "@emotion/react"
 import { Link } from "gatsby"
-
 import { rhythm } from "../utils/typography"
+import Scroll from './scrollButton'
+import Logo from './contactIcons'
+
+
+
 
 export default function Layout({ children }) {
   return (
+    <div>
+      <Scroll direction='Up'/>
+      <Scroll direction='Down'/>
+      <Logo/>
     <div
       css={css`
         margin: 0 auto;
@@ -19,7 +27,6 @@ export default function Layout({ children }) {
           to={`/contents/Contact/`}
           css={css`
             float: right;
-            margin-right: 20px
           `}
         >
           Contact
@@ -53,6 +60,7 @@ export default function Layout({ children }) {
         </Link>
       </div>
       {children}
+    </div>
     </div>
   )
 }

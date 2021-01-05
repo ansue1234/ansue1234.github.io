@@ -1,4 +1,5 @@
 import React from "react"
+import { css } from "@emotion/react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import PDFpg1 from "../files/ResumeF'2020_Page_1.jpg"
@@ -15,12 +16,15 @@ export default function Resume({ data }) {
         }
     }
     return (
-        <Layout>
-            <h1>Resume</h1>
-            <a href={pathPdf} download>If you like, click here to download my resume!</a>
-            <img src = {PDFpg1} alt="page 1"/>
-            <img src = {PDFpg2} alt="page 2"/>
-        </Layout>
+        <div>
+            <Layout>
+                <h1>Resume</h1>
+                <a href={pathPdf} download>If you like, click here to download my resume!</a>
+            </Layout>
+            <img src = {PDFpg1} alt="page 1" css={css`width:60rem; margin-left:9rem`}/>
+            <img src = {PDFpg2} alt="page 2" css={css`width:60rem; margin-left:9rem`}/>
+        </div>
+        
     )
 }
 
