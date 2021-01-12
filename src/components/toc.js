@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react"
 import styled from '@emotion/styled'
 import tw from "twin.macro"
-import {IconButton} from '@material-ui/core'
 import { css } from "@emotion/react"
-import {KeyboardArrowUp} from '@material-ui/icons'
 
 function getIds(items) {
   return items.reduce((acc, item) => {
@@ -65,10 +63,6 @@ function renderItems(items, activeId) {
   );
 }
 
-function scrollToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
 
 function ToC(props) {
   const idList = getIds(props.items);

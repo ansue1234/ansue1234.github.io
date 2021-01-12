@@ -27,7 +27,7 @@ function getProj(nodes, selectedTags) {
             articles.push(node);
         }
     }
-    return articles;
+    return articles.sort((a, b)=>(a.frontmatter.priority - b.frontmatter.priority));
 }
 
 
@@ -80,7 +80,7 @@ export default function Projects({ data }) {
     }
   }
 
-  tags = Array.from(tags);
+  tags = Array.from(tags)
 
   return (
       <div>
@@ -157,6 +157,7 @@ export const query = graphql`
           title
           tags
           description
+          priority
         }
         slug
       }

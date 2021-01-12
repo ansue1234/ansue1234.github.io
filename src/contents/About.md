@@ -15,7 +15,7 @@ I am Andrew Sue, a second year undergraduate Electrical Engineering and Computer
 
 I am very passionate about programming and electronics and overall just love building random things from LEGOs and poker card towers to my own signal generator. I really enjoy the feel when I can solve problems (except test questions) by applying things I learned. Hence, I am eagered to build on and learn more!
 
-Currently, I am working with a few friends of mine on a hardware + software system that can help remind parents when they accidentally left their baby in their cars. If you like to learn more about this project or other projects I created, [click here](../../projects/)!
+Currently, I am working with a few friends of mine on a hardware + software system that can help remind parents when they accidentally left their baby in their cars. If you like to learn more about [this project](../projects/HIP/) or other projects I created, [click here](../../projects/)!
 
 Aside from electronics and computers, I also enjoy landscaping, doing Chinese Calligraphy and ocasionally plays the harmonica. So, if you don't find me next to my computer or soldering iron, you will probably see me fiddling with a brush, playing with dirt in my backyard or contributing to the sound pollution.
 
